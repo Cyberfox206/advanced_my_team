@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,400;0,700;1,600&display=swap');
+$midnight_green: #014E56;
+$light_coral: #F67E7E;
+$white: #FFFFFF;
+$rapture_blue: #79C8C7;
+$police_blue: #2C6269;
+$deep_jungle_green: #004047;
+$sacramento_state_green: #012F34;
+$dark_green: #002529;
+$fonte: 'Livvic', sans-serif;
+
+@mixin fonte_instal($fonte, $weight) {
+    font-family: $fonte;
+    font-weight: $weight;
+}
+
+@mixin btncrate($couleur, $text_color) {
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid $couleur;
+    padding: 0.6rem 2rem;
+    color: $text_color;
+}

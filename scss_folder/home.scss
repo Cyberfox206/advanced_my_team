@@ -1,0 +1,212 @@
+@import 'var.scss';
+// --------------------------------- \\
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+main {
+    width: 100%;
+}
+
+body main #sm1 {
+    width: 100%;
+    background: 157% 0% no-repeat url(../assets/bg-pattern-home-3.svg);
+    background-color: $sacramento_state_green;
+    padding: 2rem 0;
+}
+
+body main #sm1 h2 {
+    width: 55%;
+    color: $white;
+    font-size: 2rem;
+    @include fonte_instal($fonte, 700);
+    margin-left: 2.5rem;
+}
+
+body main #sm1 ul {
+    list-style: none;
+}
+
+body main #sm1 ul li article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 4rem 0;
+}
+
+body main #sm1 ul li article h2 {
+    font-size: 1rem;
+    color: $light_coral;
+    text-transform: capitalize;
+    @include fonte_instal($fonte, 700);
+    margin: 0.5rem;
+}
+
+body main #sm1 ul li article p {
+    color: $white;
+    font-size: 1.1rem;
+    @include fonte_instal($fonte, 400);
+    line-height: 1.8rem;
+}
+
+@media (min-width:768px) {
+    body main #sm1 {
+        width: 100%;
+        background: 120% 0% no-repeat url(../assets/bg-pattern-home-3.svg);
+        background-color: $sacramento_state_green;
+        padding: 5rem;
+    }
+
+    body main #sm1 h2 {
+        width: 80%;
+        color: $white;
+        font-size: 2rem;
+        @include fonte_instal($fonte, 700);
+        margin-left: 0;
+    }
+
+    body main #sm1 ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    body main #sm1 ul li {
+        width: 100%;
+    }
+
+    body main #sm1 ul li article {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto;
+        text-align: left;
+    }
+
+    body main #sm1 ul li article img {
+        grid-column: 1;
+        grid-row: 1/3;
+        margin: 1rem;
+    }
+}
+
+@media (min-width:1400px) {
+    body main #sm1 {
+        width: 100%;
+        background: bottom right no-repeat url(../assets/bg-pattern-home-3.svg);
+        background-color: $sacramento_state_green;
+        padding: 8rem 8rem 6rem 8rem;
+        display: grid;
+        grid-template-columns: 45% 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    body main #sm1 ul li article {
+        margin: 1rem;
+    }
+
+    body main #sm1 h2 {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+    }
+}
+
+
+// --------------------------------- \\
+
+body main #sm2 {
+    background: top left no-repeat url(../assets/bg-pattern-home-4-about-3.svg), bottom right no-repeat url(../assets/bg-pattern-home-5.svg);
+    background-color: $deep_jungle_green;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 8rem 0;
+}
+
+body main #sm2 h2 {
+    width: 80%;
+    color: $white;
+    font-size: 1.8rem;
+    text-align: center;
+    @include fonte_instal($fonte, 700);
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+body main #sm2 h2 span {
+    color: $rapture_blue;
+}
+
+body main #sm2 ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+body main #sm2 ul li article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1rem 0;
+    background: no-repeat 50% 0% url(../assets/icon-quotes.svg);
+}
+
+body main #sm2 ul li article p {
+    color: $white;
+    @include fonte_instal($fonte, 400);
+    line-height: 1.6rem;
+    margin-top: 2rem;
+}
+
+body main #sm2 ul li article .poste {
+    margin: 0;
+    font-size: 0.8rem;
+    font-style: italic;
+    @include fonte_instal($fonte, 400);
+}
+
+body main #sm2 ul li article h2 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: $rapture_blue;
+    @include fonte_instal($fonte, 700);
+}
+
+body main #sm2 ul li article img {
+    width: 15%;
+    margin: 0.5rem;
+    border-radius: 50%;
+    border: 1px solid $white;
+}
+
+@media (min-width:1400px) {
+
+    body main #sm2 ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        width: 75%;
+    }
+
+    body main #sm2 ul li article img {
+        margin: 1.5rem;
+        width: 20%;
+    }
+
+    body main #sm2 ul li article {
+        margin: 0.5rem;
+    }
+
+    body main #sm2 ul li article h2 {
+        margin: 1.5rem 0 0 0;
+    }
+}
